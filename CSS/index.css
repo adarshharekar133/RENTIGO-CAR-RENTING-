@@ -437,13 +437,65 @@ nav a:hover {
 }
 
 .sec-heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 15px;
     margin-bottom: 28px;
+}
+
+.view-more-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    background: #fff;
+    border: 1px solid var(--brand);
+    color: var(--brand);
+    border-radius: 8px;
+    padding: 11px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.view-more-btn:hover {
+    background: var(--brand);
+    color: #fff;
+}
+
+.view-more-btn i {
+    transition: transform 0.25s ease;
+}
+
+.view-more-btn.expanded i {
+    transform: rotate(180deg);
 }
 
 .famous-car {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     gap: 24px;
+}
+
+.extra-car {
+    display: none;
+}
+
+.famous-car.show-all .extra-car {
+    display: block;
+    animation: fade-in 0.35s ease;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
 }
 
 .card {
@@ -752,5 +804,14 @@ nav a:hover {
 
     .sec-heading h3 {
         font-size: 23px;
+    }
+
+    .sec-heading {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .view-more-btn {
+        justify-content: center;
     }
 }
