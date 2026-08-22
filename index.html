@@ -8,7 +8,7 @@
     <!-- font Awesome kit -->
     <script src="https://kit.fontawesome.com/a80d6e1688.js" crossorigin="anonymous"></script>
 
-    <link rel="icon" type="image/x-icon" href="images/favicon_io (1)/favicon.ico">
+    <meta name="description" content="RENTIGO - rent economy to luxury cars at the best prices, book in a few clicks.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,16 +16,20 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div>
+        <nav id="navbar">
+            <div class="nav-logo">
                 <!-- logo -->
-                 <!-- <h2 style="color: black;">RENTI<span style="color: #fe6603;">GO</span></h2> -->
-                <img src="image/Untitled design.png" alt="logo" width="120px">  
+                <img src="image/Untitled design.png" alt="RENTIGO logo">
             </div>
+
+            <!-- mobile menu button -->
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
 
             <!-- menu button -->
             <ul class="ul1">
-                <li><a href="home.html" ><i class="fa-brands fa-houzz"></i>Home</a></li>
+                <li><a href="index.html" class="active"><i class="fa-brands fa-houzz"></i>Home</a></li>
                 <li><a href="cars.html"><i class="fa-solid fa-car"></i>Cars</a></li>
                 <li><a href="services.html"><i class="fa-solid fa-screwdriver-wrench"></i>Services</a></li>
                 <li><a href="pricing.html"><i class="fa-solid fa-coins"></i>Pricing</a></li>
@@ -34,7 +38,7 @@
 
             <ul class="ul2">
                 <li><i class="fa-solid fa-phone"></i>+91 9167881109 </li>
-                <button><i class="fa-solid fa-user-plus"></i>login</button>
+                <li><button><i class="fa-solid fa-user-plus"></i>login</button></li>
             </ul>
         </nav>
     </header>
@@ -45,6 +49,8 @@
 
     <!-- Left Content -->
      <div class="hero-content">
+        <span class="hero-badge"><i class="fa-solid fa-bolt"></i> Instant booking, zero paperwork</span>
+
         <h1>
             Drive Your Dream,<br>
             <span>Rent with Ease.</span>
@@ -63,6 +69,12 @@
             <button class="btn-secondary">
                 Explore Cars <i class="fa-solid fa-car"></i>
             </button>
+        </div>
+
+        <div class="hero-stats">
+            <div><strong>500+</strong><span>Cars available</span></div>
+            <div><strong>25k+</strong><span>Happy customers</span></div>
+            <div><strong>4.8/5</strong><span>Average rating</span></div>
         </div>
     </div>
 
@@ -175,11 +187,13 @@
 
         <div class="famous-car">
             <div class="card">
-                <img src="image/car/swift.png" alt="car">
+                <img src="image/car/swift.png" alt="Maruti Swift">
                 <h3>Maruti swift</h3>
-                <p>4 Seat</p>
-                <p>Petrol</p>
-                <p>25 KM/l</p>
+                <div class="card-specs">
+                    <p><i class="fa-solid fa-user-group"></i>4 Seat</p>
+                    <p><i class="fa-solid fa-gas-pump"></i>Petrol</p>
+                    <p><i class="fa-solid fa-road"></i>25 KM/l</p>
+                </div>
 
                 <div class="car-bottom">
                     <h4>₹1,499 <span>day</span></h4>
@@ -188,11 +202,13 @@
             </div>
 
             <div class="card">
-                <img src="image/car/creata.png" alt="car">
+                <img src="image/car/creata.png" alt="Hyundai Creta">
                 <h3>Hyundai Creata</h3>
-                <p>4 Seat</p>
-                <p>Petrol</p>
-                <p>25 KM/l</p>
+                <div class="card-specs">
+                    <p><i class="fa-solid fa-user-group"></i>4 Seat</p>
+                    <p><i class="fa-solid fa-gas-pump"></i>Petrol</p>
+                    <p><i class="fa-solid fa-road"></i>25 KM/l</p>
+                </div>
 
                  <div class="car-bottom">
                     <h4>₹1,499 <span>day</span></h4>
@@ -200,11 +216,13 @@
                 </div>
             </div>
             <div class="card">
-                <img src="image/car/Innova creasta.png" alt="car">
+                <img src="image/car/Innova creasta.png" alt="Toyota Innova Crysta">
                 <h3>Innova creata</h3>
-                <p>4 Seat</p>
-                <p>Petrol</p>
-                <p>25 KM/l</p>
+                <div class="card-specs">
+                    <p><i class="fa-solid fa-user-group"></i>7 Seat</p>
+                    <p><i class="fa-solid fa-gas-pump"></i>Diesel</p>
+                    <p><i class="fa-solid fa-road"></i>15 KM/l</p>
+                </div>
 
                  <div class="car-bottom">
                     <h4>₹1,499 <span>day</span></h4>
@@ -212,11 +230,13 @@
                 </div>
             </div>
             <div class="card">
-                <img src="image/car/Honada city.png" alt="car">
+                <img src="image/car/Honada city.png" alt="Honda City">
                 <h3>Honda city</h3>
-                <p>4 Seat</p>
-                <p>Petrol</p>
-                <p>25 KM/l</p>
+                <div class="card-specs">
+                    <p><i class="fa-solid fa-user-group"></i>5 Seat</p>
+                    <p><i class="fa-solid fa-gas-pump"></i>Petrol</p>
+                    <p><i class="fa-solid fa-road"></i>18 KM/l</p>
+                </div>
 
                  <div class="car-bottom">
                     <h4>₹1,499 <span>day</span></h4>
@@ -229,6 +249,38 @@
 
      </section>
 
-    
+    <!-- ===================================== FOOTER ======================================== -->
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div>
+                <h4 class="footer-brand">RENTI<span>GO</span></h4>
+                <p>Best cars, best prices, best service. Rent a car anywhere in the city and drive your dream today.</p>
+            </div>
+
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cars.html">Cars</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="About-us.html">About us</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Contact</h4>
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i> +91 9167881109</li>
+                    <li><i class="fa-solid fa-envelope"></i> support@rentigo.com</li>
+                    <li><i class="fa-solid fa-location-dot"></i> Mumbai, India</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">&copy; 2026 RENTIGO. All rights reserved.</div>
+    </footer>
+
+    <script src="JS/index.js"></script>
 </body>
 </html>
