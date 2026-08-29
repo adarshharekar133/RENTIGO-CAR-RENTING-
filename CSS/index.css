@@ -389,3 +389,66 @@ nav a:hover {
     font-size: 12px;
 }
 
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #181818;
+
+    color: white;
+
+    margin-top: 50px;
+
+    padding: 40px 60px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 50px;
+}
+
+.footer-logo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #f46b0b;
+
+    font-size: 23px;
+
+    font-weight: 700;
+}
+
+.footer-links {
+    display: flex;
+
+    gap: 80px;
+}
+
+.footer-links div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.footer-links h4 {
+    font-size: 14px;
+
+    margin-bottom: 8px;
+}
+
+.footer-links a,
+.footer-links p {
+    font-size: 11px;
+
+    color: #bbb;
+}
+
